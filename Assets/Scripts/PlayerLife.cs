@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -30,7 +28,7 @@ public class PlayerLife : MonoBehaviour
     private void Die()
     {
         deathSoundEffect.Play();
-        _rigitbody2D.bodyType = RigidbodyType2D.Static;
+       // _rigitbody2D.bodyType = RigidbodyType2D.Static;
         _animator.SetTrigger("death");
 
     }
